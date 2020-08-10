@@ -1,0 +1,87 @@
+
+@media only screen and (max-width: 600px) {
+
+    body {
+        width: 100%;
+    }
+    
+    .ancestor {
+        display: grid;
+        grid-template-columns: 2fr 1fr 2fr;
+        grid-template-rows: auto auto;
+        place-items: center;
+    }
+    
+    .slide {
+        background-image: url('../images/pattern-bg.svg'), url('../images/pattern-curve.svg');
+        background-position: center top, left bottom, center;
+        background-repeat: no-repeat;
+    }
+    
+    .slide_text {
+        background-image: url('../images/pattern-quotes.svg');
+        background-position: left top;
+        background-repeat: no-repeat;
+        grid-column: 1 / 2;
+        grid-row: 3/4;
+    }
+    
+    #john_text, #tanya_text {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    
+    .name, .profession {
+        font-weight: 700;
+    }
+    
+    .profession {
+        color: hsl(240, 18%, 77%);
+    }
+    
+    .images {
+       grid-column: 1 /2;
+       grid-row: 1/2;
+    }
+    
+    .portrait_photo {
+    box-shadow: 18px 10px 36px 1px rgba(0,0,0,0.75);
+    box-shadow: -18px 10px 36px 1px rgba(0,0,0,0.75);
+    box-shadow: 18px 10px 36px 1px rgba(0,0,0,0.75);
+    }
+    
+    .nav {
+        grid-column: 1 / 2;
+        grid-row: 2/3;
+        background-color: rgb(255, 255, 255);
+        color: var(--dark-blue);
+        padding: 1em;
+        border-radius: 2rem;
+        border: none;
+        z-index: 30;
+        cursor: pointer;
+        padding: 1rem;
+    }
+    
+    .nav-left, .nav-right {
+        padding: 0 20px 0 20px;
+    }
+    
+    
+    .slider-prev {
+        padding-right: 1.5em;
+    }
+    
+    .slider-next {
+        padding-left: 1.5em;
+    }
+    
+    .attribution { 
+        font-size: 11px; text-align: center; 
+    }
+    
+    .attribution a { 
+        color: hsl(228, 45%, 44%); 
+    }
+  } 
+}
