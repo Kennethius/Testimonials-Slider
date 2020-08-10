@@ -30,11 +30,11 @@
             <p class='name' v-else>John Tarkpor <span class='profession'>Junior Front-end Developer</span> </p>   
           </div>
           <div class="portrait">
-            <img class='portrait_img' :src='images[Math.abs(currentNumber) % images.length]'>
+            <img class='portrait_img' :src='images[Math.abs(currentNumber) % images.length]' alt='portrait_img'>
           </div>
             <div class="nav">
-              <span @click='prev(), isHidden = !isHidden'><img src="images/icon-prev.svg" class='nav-left' alt=""></span>
-              <span @click='next(), isHidden = !isHidden'><img src="images/icon-next.svg" class='nav-right'></span>
+              <span @click='prev(), isHidden = !isHidden'><img src="images/icon-prev.svg" class='nav-left' alt="prev-img"></span>
+              <span @click='next(), isHidden = !isHidden'><img src="images/icon-next.svg" class='nav-right' alt='next-img'></span>
             </div>
           </div>
         </div>
